@@ -4,7 +4,6 @@ pages:
   script:
     - mkdir .public
     - cp -r * .public
-    - https://www.offargu.com/*  https://offargu.com/:splat  301!
     - mv .public public
   artifacts:
     paths:

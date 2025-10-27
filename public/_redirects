@@ -1,0 +1,3 @@
+# Netlify-style redirects
+# Redirect www.offargu.com to offargu.com (preserve path)
+https://www.offargu.com/*  https://offargu.com/:splat  301!
