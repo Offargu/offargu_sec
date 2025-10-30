@@ -31,8 +31,8 @@ async function subscribeNewsletter(e){
 function createGoogleCalendarLink(opts){
   const base = 'https://calendar.google.com/calendar/r/eventedit';
   const params = new URLSearchParams({
-    text: opts.title || 'Cyvra Consultation',
-    details: opts.details || '30-minute discovery call with Cyvra AI Security',
+  text: opts.title || 'Offargu Consultation',
+  details: opts.details || '30-minute discovery call with Offargu AI Security',
     location: opts.location || 'Google Meet',
     dates: opts.dates || ''
   });
@@ -45,6 +45,6 @@ function bookNow(){
   start.setHours(10,0,0,0);
   const end = new Date(start.getTime()+30*60000);
   function toGd(d){ return d.toISOString().replace(/-|:|\.\d+/g,''); }
-  const link = createGoogleCalendarLink({title:'Cyvra Discovery Call', details:'30-minute consult to discuss AI security for your SMB', dates: toGd(start)+'/'+toGd(end)});
+  const link = createGoogleCalendarLink({title:'Offargu Discovery Call', details:'30-minute consult to discuss AI security for your SMB', dates: toGd(start)+'/'+toGd(end)});
   window.open(link,'_blank');
 }

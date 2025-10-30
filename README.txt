@@ -1,4 +1,4 @@
-Cyvra AI Security — Static Site Bundle
+Offargu AI Security — Static Site Bundle
 Files included:
 - index.html, about.html, insights.html, contact.html
 - /services/ai-risk-governance.html
